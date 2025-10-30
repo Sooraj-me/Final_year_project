@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="siteTitle">FarmDirect Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5eeee;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgb(248, 245, 245);
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            color: #45a049;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #4CAF50;
+        }
+        .auth-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .auth-buttons a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .auth-buttons a:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="language" data-i18n-placeholder="languagePlaceholder">
+            <option value="" disabled selected data-i18n="languagePlaceholder">Select your preferred language</option>
+        </select>
+    </div>
+    <marquee behavior="" direction="left" data-i18n="marquee">This website is under development.</marquee>
+    <header>
+        <h1 data-i18n="siteTitle">FarmDirect Connect</h1>
+        <p data-i18n="siteSubtitle">Addressing the Income Gap Caused by Middlemen in Agriculture Marketing</p>
+    </header>
+    <nav>
+        <a href="index.html" data-i18n="homeNav">Home</a>
+        <a href="fsignin.html" data-i18n="farmerSignInNav">Farmer Sign In</a>
+        <a href="csignin.html" data-i18n="consumerSignInNav">Consumer Sign In</a>
+        <a href="signup.html" data-i18n="farmerSignUpNav">Farmer Sign Up</a>
+        <a href="csignup.html" data-i18n="consumerSignUpNav">Consumer Sign Up</a>
+        <a href="#" data-i18n="aboutUsNav">About Us</a>
+        <a href="#" data-i18n="contactNav">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <h1 data-i18n="welcome">Welcome to FarmDirect Connect</h1>
+            <p style="color: ghostwhite;" data-i18n="welcomeText">Empowering farmers by connecting them directly to consumers, eliminating middlemen, and ensuring fair prices for all.</p>
+        </div>
+        <div class="section">
+            <h2 data-i18n="theProblem">The Problem</h2>
+            <p style="color: ghostwhite;" data-i18n="problemText">In traditional agriculture marketing, middlemen often take a large share of the profits, leaving farmers with minimal income. This creates a significant income gap and discourages sustainable farming practices.</p>
+        </div>
+        <div class="section">
+            <h2 data-i18n="ourSolution">Our Solution</h2>
+            <p style="color: ghostwhite;" data-i18n="solutionText">FarmDirect Connect is a platform that enables direct transactions between farmers and consumers. Farmers can list their produce, set their own prices, and consumers can buy fresh, local goods at fair rates. This reduces costs, increases farmer earnings, and promotes transparency in the supply chain.</p>
+        </div>
+        <div class="section">
+            <h2 data-i18n="keyFeatures">Key Features</h2>
+            <ul>
+                <li style="color: ghostwhite;" data-i18n="feature1">Direct Farmer Profiles and Listings</li>
+                <li style="color: ghostwhite;" data-i18n="feature2">Secure Online Payments</li>
+                <li style="color: ghostwhite;" data-i18n="feature3">Real-time Inventory Management</li>
+                <li style="color: ghostwhite;" data-i18n="feature4">Consumer Reviews and Ratings</li>
+                <li style="color: ghostwhite;" data-i18n="feature5">Logistics Support for Delivery</li>
+            </ul>
+        </div>
+        <div class="auth-buttons">
+            <a href="signup.html" data-i18n="signUpFarmer">Sign Up as Farmer</a>
+            <a href="csignup.html" data-i18n="signUpConsumer">Sign Up as Consumer</a>
+            <a href="fsignin.html" data-i18n="signInFarmer">Sign In as Farmer</a>
+            <a href="csignin.html" data-i18n="signInConsumer">Sign In as Consumer</a>
+        </div>
+    </div>
+    <script src="translations.js"></script>
+    <script src="language.js"></script>
+</body>
+
+</html>
